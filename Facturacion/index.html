@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Factura</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+          <h1>Consulta DTE - Ministerio de Hacienda</h1>
+        </div>
+      
+        <div class="header-center">
+          <img src="assets/logo-ministerio.png" alt="Logo Ministerio de Hacienda" class="logo">
+        </div>
+      
+        <div class="header-right">
+          <a href="manual.html" class="manual-link" target="_blank">📘 Manual de Usuario</a>
+        </div>
+      </header>
+      
+    <div class="container">
+    <h1>Ingrese los datos solicitados</h1>
+    <h2>* Todos los campos son requeridos</h2>
+
+    <label for="fechaEmi">Fecha de Emisión:</label>
+    <input type="date" id="fechaEmi" name="fechaEmi" value="2025-09-11" readonly required>
+        <label for="codGen">Código de Generación:</label>
+      <input type="text" id="codGen" placeholder="F74821E4-814E-459E-9328-685DC05D185" required>
+      <form action="consulta.html" method="get">
+        <!-- tus campos aquí -->
+        <button type="submit">Realizar Busqueda</button>
+      </form>
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
